@@ -15,8 +15,7 @@ import qualified Data.Text as T
 
 main :: IO ()
 main = do
-    z <- loadCode ["Prelude"]
-                  "Tatti"
+    z <- loadCode "Tatti"
                   (S.fromList ["thing"])
                   ("{-# LANGUAGE AutoDeriveTypeable #-}\n" <>
                    "module Tatti ( thing ) where\n" <>
